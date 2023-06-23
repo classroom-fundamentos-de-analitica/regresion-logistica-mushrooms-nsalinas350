@@ -58,9 +58,6 @@ La información contenida en la muestra es la siguiente:
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegressionCV
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix
 
 def pregunta_01():
