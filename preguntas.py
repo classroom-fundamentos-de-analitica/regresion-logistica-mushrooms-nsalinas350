@@ -110,12 +110,17 @@ def pregunta_03():
     Especificación y entrenamiento del modelo. En sklearn, el modelo de regresión
     logística (a diferencia del modelo implementado normalmente en estadística) tiene
     un hiperparámetro de regularición llamado `Cs`. Consulte la documentación.
-
     Para encontrar el valor óptimo de Cs se puede usar LogisticRegressionCV.
-
     Ya que las variables explicativas son literales, resulta más conveniente usar un
     pipeline.
     """
+
+    # Importe LogisticRegressionCV
+    # Importe OneHotEncoder
+    # Importe Pipeline
+    from sklearn.linear_model import LogisticRegressionCV
+    from sklearn.preprocessing import OneHotEncoder
+    from sklearn.pipeline import Pipeline
 
     # Cargue las variables.
     X_train, _, y_train, _ = pregunta_02()
