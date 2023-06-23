@@ -57,8 +57,6 @@ La información contenida en la muestra es la siguiente:
 """
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix
 
 def pregunta_01():
     """
@@ -148,6 +146,9 @@ def pregunta_04():
     """
     Evalue el modelo obtenido.
     """
+
+     # Importe confusion_matrix
+    from sklearn.metrics import confusion_matrix
 
     # Obtenga el pipeline de la pregunta 3.
     pipeline = pregunta_03()
